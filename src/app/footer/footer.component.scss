@@ -1,0 +1,117 @@
+
+.footer {
+    background: #001F36;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ccc;
+}
+.subscribe-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 250px;
+}
+.subscribe-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.subscribe-box button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.ul {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.ul li {
+    margin: 8px 0;
+}
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400px;
+}
+.footer ul li a:hover {
+    color: white;
+}
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.qr-section img {
+    width: 120px;
+    margin-top: 10px;
+}
+.social-icons {
+    margin-top: 15px;
+}
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.qr-section {
+    text-align: center;
+    color: white;
+}
+
+.app-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.qr-code {
+    width: 100px; /* Adjust based on requirement */
+    height: auto;
+}
+
+.store-buttons img {
+    width: 140px; /* Adjust button size */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+}
