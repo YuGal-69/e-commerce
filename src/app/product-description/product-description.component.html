@@ -1,1 +1,565 @@
-<p>product-description works!</p>
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="breadcrumb d-flex align-items-center">
+            <a href="#"> Home ></a>
+            <a href="/product-description">Product Description</a>
+        </div>
+    
+        <div class="product-title">Yang Set</div>
+    
+        <div class="product-description">
+            Introducing the Nike Alpha All-Purpose Gen Z, the latest evolution in athletic footwear <br> designed to meet the dynamic needs of the modern generation.
+        </div>
+    
+        
+        <div class="rating">
+            <span>4.4</span>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="reviews">(463 reviews)</span>
+
+            <div class="seller">
+                <i class="fa-solid fa-user"></i> True net Commerce
+                <div class="rating-badge">
+                    <i class="fa-solid fa-star"></i> 4.4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="row mt-3">
+        <div class="col-lg-8 col-md-8 col-sm-12 ">
+                <div class="d-flex">
+                    <div class="card">
+                        <img src="../../assets/image 5.png" class="main-image " id="mainImage" alt="Product Image">
+                    </div>
+    
+                    <div>
+                        <div class="dropdown">
+                            <button class="share-btn" (click)="toggleDropdown($event)">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        
+                            <div class="dropdown-content" *ngIf="isDropdownOpen">
+                                <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+                                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                                <a href="#"><i class="fas fa-envelope"></i> E-mail</a>
+                                <input type="text" value="https://figma.com/file/example" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="thumbnails slider-wrapper">
+                    <img src="../../assets/image 6.png" class="thumbnail" data-src="https://via.placeholder.com/600x400">
+                    <img src="../../assets/image 7.png" class="thumbnail" data-src="https://via.placeholder.com/600x400">
+                    <img src="../../assets/image 8.png" class="thumbnail" data-src="https://via.placeholder.com/600x400">
+                    <img src="../../assets/image 9.png" class="thumbnail" data-src="https://via.placeholder.com/600x400">
+                </div>
+                
+        </div>
+        
+           
+        
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+            <div class="product-card">
+                <div class="price">$200 <span class="old-price">($280.00)</span></div>
+                <div class="offer">⚠ 2 days left at this price!</div>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <label>Select Quantity</label>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                
+                <div  class="d-flex align-items-center justify-content-between">
+                    <label>Select Color</label>
+                    <div class="color-options">
+                        <div class="color-circle" style="background: #c4a484;"></div>
+                        <div class="color-circle" style="background: #008060;"></div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between"><label>Select Size</label> <span style="color:#858585; cursor:pointer;">View Chart</span></div>
+                <div class="size-options">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                    <button class="size-btn">XXL</button>
+                </div>
+                
+                <button class="out-of-stock">Out of Stock</button>
+                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                
+                <div class="wishlist"><i class="fa-regular fa-heart"></i> Add to Wishlist</div>
+                
+                <div class="extra-info">
+                    <div>
+                        <i class="fa-regular fa-clock"></i> Free Delivery
+                    </div> 
+                    <div>
+                        <i class="fa-solid fa-clock-rotate-left"></i> 7 Days Replacement
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-book-skull"></i> Quality Verified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card ">
+                <div>
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills d-flex justify-content-around">
+                        <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#home">Product Details</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu1">Shipping Info</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Review</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu3">Items from Seller</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="home">...</div>
+                        <div class="tab-pane container fade" id="menu1">...</div>
+                        <div class="tab-pane container fade" id="menu2">...</div>
+                        <div class="tab-pane container fade" id="menu3">...</div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <section class="product-details">
+                    <h2>Product Details</h2>
+                    <p>This course is for those who want to launch a Freelance Web Design career.</p>
+                    <ul>
+                        <li>Present eget consequat elit. Duis a pretium purus.</li>
+                        <li>Sed sagittis suscipit condimentum pellentesque vulputate feugiat libero nec accumsan.</li>
+                        <li>Those who are looking to reboot their work life and try a new profession that is fun, rewarding, and highly in-demand.</li>
+                        <li>Sed nec dapibus orci integer nisl turpis, eleifend sit amet aliquam vel, lacinia quis ex.</li>
+                        <li>Those who are looking to reboot their work life and try a new profession that is fun, rewarding and highly in-demand.</li>
+                        <li>Nunc auctor consequat lorem, in posuere enim hendrerit sed.</li>
+                        <li>Duis ornare enim ullamcorper congue consectetur suspendisse interdum tristique est sed molestie.</li>
+                    </ul>
+                </section>
+        
+                <section class="specifications">
+                    <h2>Specifications</h2>
+                   <div  class="d-flex gap-2">
+                    <div>
+                        <p> <i class="fa-solid fa-circle-check"></i> <strong> Brand:</strong> Calvin Klein</p>
+                        <p> <i class="fa-solid fa-circle-check"></i> <strong> Item dimensions:</strong> 2.5 x 3.63 x 5.49 inches</p>
+                       </div>
+                       <div>
+                        <p> <i class="fa-solid fa-circle-check"></i> <strong> Product weight:</strong> 0.5 kilograms</p>
+                        <p> <i class="fa-solid fa-circle-check"></i> <strong> Age Range:</strong> Adult</p>
+                       </div>
+                   </div>
+                </section>
+        
+                <section class="shipping-info">
+                    <h2>Shipping Info</h2>
+                    <ul>
+                        <li>This course is for those who want to launch a Freelance Web Design career.</li>
+                        <li>Praesent eget consequat elit. Duis a pretium purus.</li>
+                        <li>Sed sagittis suscipit condimentum pellentesque vulputate feugiat libero nec accumsan.</li>
+                        <li>Sed nec dapibus orci integer nisl turpis, eleifend sit amet aliquam vel, lacinia quis ex.</li>
+                        <li>Those who are looking to reboot their work life and try a new profession that is fun, rewarding and highly in-demand.</li>
+                        <li>Nunc auctor consequat lorem, in posuere enim hendrerit sed.</li>
+                        <li>Duis ornare enim ullamcorper congue consectetur suspendisse interdum tristique est sed molestie.</li>
+                    </ul>
+                </section>
+        
+                <section class="bundle">
+                    <h2>Seller’s Bundle - Diwali Bundle</h2>
+                    <p>Bundle ID- QNC1827817291 Valid from 11/11/2024 to 11/18/2024 </p>
+                    <div class="bundle-items slider-wrapper">
+                        <div class="product">
+                            <img src="../../assets/Content.png" alt="Gaming Headset">
+                            <p>RUNMUS Gaming Headset with.. </p>
+                            <div class="d-flex gap-3"><p>$59.99</p> <p>$25.99</p> <p>10%off</p></div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center"><p>&</p></div>
+                        <div class="product">
+                            <img src="../../assets/Content (1).png" alt="Gaming Headset">
+                            <p>RUNMUS Gaming Headset with 7.1..</p>
+                            <div class="d-flex gap-3"><p>$25.99</p> <p>$18.69</p> <p>10%off</p></div>
+                        </div>
+                    </div>
+
+                    <h2>Expand the Bundle with items below for additional savings (Check box to add)</h2>
+
+                    <div class="slider-wrapper">
+                        <div class="bundle-items d-flex justify-content-between ">
+                            <div class="d-flex justify-content-center align-items-center"><p><i class="fa-solid fa-plus"></i></p></div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <p>One a Day</p>
+                                <div class="d-flex gap-3"><p>$59.99</p> <p>$25.99</p> <p>10%off</p></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center"><p><i class="fa-solid fa-plus"></i></p></div>
+                            <div class="product">
+                                <img src="../../assets/Content (3).png" alt="Gaming Headset">
+                                <p>Palm Olive</p>
+                                <div class="d-flex gap-3"><p>$25.99</p> <p>$18.69</p> <p>10%off</p></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center"><p><i class="fa-solid fa-plus"></i></p></div>
+                            <div class="product">
+                                <img src="../../assets/Content (3).png" alt="Gaming Headset">
+                                <p>Palm Olive</p>
+                                <div class="d-flex gap-3"><p>$25.99</p> <p>$18.69</p> <p>10%off</p></div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center"><p><i class="fa-solid fa-plus"></i></p></div>
+                        </div>
+                    </div>
+
+                    <h2 class="mt-3">Total Minimum Value: $ 100 (Eligible for free shipping)</h2>
+                    <button class="wishlist" style="background-color: #012B49; color: #fff; padding: 10px;border-radius: 5px;">Add Bundle (4 items) to Cart</button>
+                </section>
+                
+
+                <section class="faq-c">
+                    <h2>FAQs</h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     <div>What is the return policy?</div> <div><i class="fa-solid fa-plus"></i></div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can return the product within 30 days of purchase.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div> Do you offer international shipping?  </div>   <div> <i class="fa-solid fa-plus"></i></div>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, we ship to over 50 countries worldwide.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div>How can I track my order?</div>  <div><i class="fa-solid fa-plus"></i></div>                 
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can track your order using the tracking link sent to your email after shipping.
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                     <div>What payment methods do you accept?</div>   <div><i class="fa-solid fa-plus"></i></div>           
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We accept credit/debit cards, PayPal, and other online payment methods.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="reviews">
+                    <h2>Customer Ratings</h2>
+                        <div class="rating-c">
+                            <div class="rating-box">
+                                <p class="fw-bold" style="font-size: 48px;"> 4.8</p>
+                                <div class="stars">★★★★★</div>
+                                <span>Rating</span>
+                            </div>
+                            <div class="ratings mb-2">
+                                <div class="rating-row">
+                                    <span class="d-flex"> <div class="stars">★★★★★</div> 5 Star Rating</span>
+                                    <div class="rating-bar"><div class="rating-fill" style="width: 75%;"></div></div>
+                                    <span>75%</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span  class="d-flex"> <div class="stars">★★★★☆</div> 4 Star Rating</span>
+                                    <div class="rating-bar"><div class="rating-fill" style="width: 21%;"></div></div>
+                                    <span>21%</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span  class="d-flex"><div class="stars">★★★☆☆</div> 3 Star Rating</span>
+                                    <div class="rating-bar"><div class="rating-fill" style="width: 3%;"></div></div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span  class="d-flex"><div class="stars">★★☆☆☆</div> 2 Star Rating</span>
+                                    <div class="rating-bar"><div class="rating-fill" style="width: 1%;"></div></div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span  class="d-flex"><div class="stars">★☆☆☆☆</div> 1 Star Rating</span>
+                                    <div class="rating-bar"><div class="rating-fill" style="width: 0.5%;"></div></div>
+                                    <span>&lt;1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <h2>Images from Reviews</h2>
+                            </div>
+                            <div>
+                                <a href="">view more</a>
+                            </div>
+                        </div>
+                        <div class="review-images slider-wrapper">
+                            
+                            <img src="../../assets/Content.png" alt="Review Image">
+                            <img src="../../assets/Content.png" alt="Review Image">
+                            <img src="../../assets/Content.png" alt="Review Image">
+                            <img src="../../assets/Content.png" alt="Review Image">
+                            
+                            
+                        </div>
+                </section>
+
+                <section>
+                    <div class="customer-reviews mt-3">
+                        <h2>Customer Reviews</h2>
+                        <div class="review">
+                            <div class="review-header d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../assets/himanshu.png" alt="User Avatar" class="user-avatar">
+                                    <p class="user-name">Dianne Russell</p>
+                                    <span class="time-ago">3 mins ago</span>
+                                </div>
+                                <div>
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p>This course is just amazing! It has great course content, best practices, and a lot of real-world knowledge. I love the way of giving examples, the best tips by the instructor which are pretty interesting, fun, and knowledgeable. I was never getting bored throughout the course. This course meets more than my expectations and I made the best investment of time to learn and practice what I am passionate about. Thank you so much to our excellent instructor Vako! Highly recommend this course! Take the next step.</p>
+                            <div class="review-images d-flex">
+                                <img src="../../assets/Content.png" alt="">
+                                <img src="../../assets/Content.png" alt="">
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../assets/Image (3).png" alt="User Avatar" class="user-avatar">
+                                    <p class="user-name">Bessie Cooper</p>
+                                    <span class="time-ago">6 hours ago</span>
+                                </div>
+                                <div>
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p>Webflow course was good, it covers design secrets, and how to build responsive web pages, blogs, and some more tricks and tips about Webflow. I enjoyed the course, and it helped me add web development skills related to Webflow in my toolbox. Thank you, Vako.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../assets/Image (4).png" alt="User Avatar" class="user-avatar">
+                                    <p class="user-name">Eleanor Pena</p>
+                                    <span class="time-ago">6 hours ago</span>
+                                </div>
+                                <div>
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p>I appreciate the precise short videos (10 mins or less each) because overly long videos tend to make me lose focus. The instructor is very knowledgeable in Web Design, and it shows as he shares his knowledge. These were my best 6 months of training. Thanks, Vako.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review-header d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="../../assets/Image (5).png" alt="User Avatar" class="user-avatar">
+                                    <p class="user-name">Arlene McCoy</p>
+                                    <span class="time-ago">1 week ago</span>
+                                </div>
+                                <div>
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p>This should be one of the best courses I ever made about UX/UI in Udemy. Highly recommend to those who are new to UX/UI and want to become a UX/UI freelancer!</p>
+                        </div>
+                        <button class="load-more">Load More</button>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="related-products">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="load-more1" >
+                                <p>Other items of interest from this seller</p>
+                            </div>
+                            <div>
+                                <p>___Everyday listed new products from our trusted seller___</p>
+                            </div>
+                            <div><button class="load-more">Show all products</button></div>
+                        </div>
+                        <div class="product-list slider-wrapper d-flex">
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/Content.png" alt="Gaming Headset">
+                                <div class="rating">
+                                    ⭐ 5.0 <span>(123 Reviews)</span>
+                                </div>
+                                <p>RUNMUS Gaming Headset</p>
+                                <p class="old-price">$59.99</p>
+                                <p class="price">$25.99 <span class="discount">10% Off</span></p>
+                                <div class="extras">
+                                    <span>🚚 Free shipping</span>
+                                    <span>🎁 Free gift</span>
+                                </div>
+                                <div>
+                                    <button>View Product</button>
+                                    <img src="../../assets/hrt.png" alt="" class="user-avatar">
+                                    <img src="../../assets/large.png" alt="" class="user-avatar">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
